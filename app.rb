@@ -19,8 +19,8 @@ class App < Sinatra::Base
   end
 
   get '/say/:word1/:word2/:word3/:word4/:word5' do
-    params.keys.map do |key|
-      key.to_s
+    params.values.map do |value|
+      value
     end.join(" ")
   end
 
