@@ -15,7 +15,7 @@ class App < Sinatra::Base
     params[:number].to_i.times do
       ret_array.push(params[:phrase])
     end
-    ret_string
+    ret_array.join(" ")
   end
 
 end
