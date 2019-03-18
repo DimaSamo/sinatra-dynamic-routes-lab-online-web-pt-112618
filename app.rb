@@ -15,6 +15,7 @@ class App < Sinatra::Base
     params[:number]-1.times do
       ret_string+= " #{params[:phrase]}"
     end
+    ret_string
   end
 
 end
