@@ -31,13 +31,13 @@ class App < Sinatra::Base
 
     case @operation
     when "add"
-      @num_one+@num_two
+      (@num_one+@num_two).to_s
     when "subtract"
-      @num_one-@num_two
+      (@num_one-@num_two).to_s
     when "multiply"
-      @num_one*@num_two
+      (@num_one*@num_two).to_s
     when "divide"
-      @num_one/@num_two
+    (@num_one/@num_two).to_s
     end
   end
 
